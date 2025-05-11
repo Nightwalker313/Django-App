@@ -1,78 +1,50 @@
-Django-App
-A simple Django web application example.
+# Task Management Web Application
 
-Prerequisites
-Make sure you have the following installed:
+A simple yet functional Django-based web app that enables users to manage their personal or professional tasks. Users can create, view, update, and delete tasks with details such as title, description, due date, and priority level. Each user has their own account and private task list.
 
-Python 3.7 or higher
+---
 
-pip (Python package manager)
+# Features Implemented (Phase 3)
 
-Virtualenv (optional but recommended)
+-  User Registration and Login
+- Task Creation
+-  Task Listing
+-  Task Update
+-  Task Deletion
+-  Secure access: Users can only see and modify their own tasks
 
-Setup Instructions
-Clone the Repository
+This reflects **at least 40%** of the final system functionality.
 
-bash
-Copy
-Edit
-git clone https://github.com/Nightwalker313/Django-App.git
-cd Django-App
-(Optional) Create and Activate a Virtual Environment
+---
 
-bash
-Copy
-Edit
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-Install Dependencies
+# Use Cases
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-⚡ Note: If requirements.txt is missing, manually install Django:
+# User Management
+- Sign up, login, and logout functionality
+- Secure session management
 
-bash
-Copy
-Edit
-pip install django
-Apply Migrations
+# Task Management
+- Create tasks with title, description, due date, and priority
+- View a list of tasks
+- Edit and delete existing tasks
+- (Future) Sort/filter tasks by due date, priority, and status
 
-bash
-Copy
-Edit
-python manage.py migrate
-Run the Development Server
+---
 
-bash
-Copy
-Edit
-python manage.py runserver
-Access the Application
+# Tech Stack
 
-Open your browser and navigate to:
+- **Framework**: Django 5.x
+- **Frontend**: HTML5, Bootstrap (via Django templates)
+- **Database**: SQLite (default Django DB)
+- **Authentication**: Django's built-in auth system
+- **Version Control**: Git + GitHub
 
-cpp
-Copy
-Edit
-http://127.0.0.1:8000/
-Troubleshooting
-If you get a ModuleNotFoundError: No module named 'django', ensure your virtual environment is activated and Django is installed.
+---
 
-If you change any models, don't forget to run:
+# Setup Instructions
 
-bash
-Copy
-Edit
-python manage.py makemigrations
-python manage.py migrate
-Project Structure
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Nightwalker313/Django-App.git
+   cd Django-App
 
-Folder/File	Description
-myapp/	Django application code (views, urls, etc.)
-manage.py	Django’s command-line utility
-db.sqlite3	SQLite database file (created after migrations)
